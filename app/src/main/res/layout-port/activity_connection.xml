@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/product_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:textColor="@android:color/darker_gray"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/model"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No 'Product Connected"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery"
+            android:textColor="@android:color/darker_gray"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/model"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/battery_linear_layout"
+            android:orientation="horizontal"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                android:layout_height="10dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="6"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar" />
+
+            <TextView
+                android:id="@+id/battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0%"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Enter Device"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/battery_linear_layout"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sdk_version"
+            android:textColor="@android:color/darker_gray"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_open"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

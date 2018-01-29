@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HIFLY</string>
+    <string name="product_information">No Product Connected</string>
+    <string name="sdk_version">DJI SDK Version: 4.2.1</string>
+
+</resources>
