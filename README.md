@@ -4,7 +4,7 @@
 PC 버전과 Raspberry PI 버전 구별없이 같은 어플리케이션을 사용한다.
 
 
-## 먼저 DJI SDK를 프로젝트에 적용시킨다.
+## 사용 법
 
 1. <https://developer.dji.com/mobile-sdk/> 사이트에 접속한다.
 
